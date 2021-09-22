@@ -1,0 +1,10 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+
+# Not locking, because we'll be changing rails versions in CI
+/Gemfile.lock
+
+# Not committing the schema as we shouldn't need it
+/db/schema.rb
